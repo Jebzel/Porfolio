@@ -1,0 +1,142 @@
+//
+//  ViewPadreEpoc.m
+//  Visual Aid
+//
+//  Created by Jebzel Castillo on 08/07/13.
+//  Copyright (c) 2013. All rights reserved.
+//
+
+#import "ViewPadreEpoc.h"
+
+@interface ViewPadreEpoc ()
+
+@end
+
+@implementation ViewPadreEpoc
+@synthesize iV;
+@synthesize bandera;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (void)llenarAnim:(NSInteger) cont :(NSString*) strC
+{
+    UIImageView *tempView;  NSString *num;
+    NSMutableArray* animationImages;
+    animationImages = [[NSMutableArray alloc] init];
+    for ( int i=1;i<=cont;i++)//153
+    {
+        if (i<10)
+        {
+            num = [NSString stringWithFormat:@"%@000%d.png", strC,i];
+        }
+        else if (i<100)
+        {
+            num = [NSString stringWithFormat:@"%@00%d.png", strC,i];
+        }
+        else
+        {
+            num = [NSString stringWithFormat:@"%@0%d.png", strC,i];
+        }
+        
+        tempView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:num]];
+        [animationImages addObject:tempView.image];
+    }
+    iV.animationImages = animationImages;
+    
+    [animationImages removeAllObjects];
+    animationImages=nil;
+}
+- (void)llenarAnim:(UIImageView *) iV2 :(NSInteger) cont :(NSString*) strC
+{
+    UIImageView *tempView;  NSString *num;
+    NSMutableArray* animationImages;
+    animationImages = [[NSMutableArray alloc] init];
+    for ( int i=1;i<=cont;i++)//153
+    {
+        if (i<10)
+        {
+            num = [NSString stringWithFormat:@"%@000%d.png", strC,i];
+        }
+        else if (i<100)
+        {
+            num = [NSString stringWithFormat:@"%@00%d.png", strC,i];
+        }
+        else
+        {
+            num = [NSString stringWithFormat:@"%@0%d.png", strC,i];
+        }
+        
+        tempView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:num]];
+        [animationImages addObject:tempView.image];
+    }
+    iV2.animationImages = animationImages;
+  
+    [animationImages removeAllObjects];
+     animationImages=nil;
+}
+
+- (void)llenarAnim:(UIImageView *) iV :(NSInteger) cont :(NSString*) strC :(NSMutableArray*) animationImages;
+{
+    UIImageView *tempView;  NSString *num;
+    
+    for ( int i=1;i<=cont;i++)//153
+    {
+        if (i<10)
+        {
+            num = [NSString stringWithFormat:@"%@000%d.png", strC,i];
+        }
+        else if (i<100)
+        {
+            num = [NSString stringWithFormat:@"%@00%d.png", strC,i];
+        }
+        else
+        {
+            num = [NSString stringWithFormat:@"%@0%d.png", strC,i];
+        }
+        
+        tempView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:num]];
+        [animationImages addObject:tempView.image];
+    }
+    iV.animationImages = animationImages;
+    [animationImages removeAllObjects];
+}
+
+-(IBAction)m2:(id)sender {
+    
+	UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:@"2. Partridge MR, et al. Ther Adv Respir Dis. 2009; 3(4):147-157." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Cerrar",   nil];
+	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[popupQuery showInView:self.view];
+}
+-(IBAction)m3:(id)sender {
+    
+	UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:@"3. Adaptado de Calverley PM y col. Eur Respir J 2003; 22(6):912-9." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Cerrar",   nil];
+	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[popupQuery showInView:self.view];
+}
+-(IBAction)m4:(id)sender {
+    
+	UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:@"4. Adaptado de Welte T y col, 2009. Am J Respir Crit Care Med 2009; 180(8):741-750." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Cerrar",   nil];
+	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[popupQuery showInView:self.view];
+}
+ 
+
+@end
