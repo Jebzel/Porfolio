@@ -11,3 +11,5 @@ drugstoreApp: Made with Symfony 1.4, an app for keeping track the user's weight.
 transferBank: An app made in Java with websphere using beans (mandatory uses) in order to make bank account transfers in the same bank.
 
 bootstrapPages: Web pages using bootstrap and jquery framework. The pages are in process to be implemented as we speak. You can see the home page here: http://goo.gl/Dv7ovK.
+
+elearning: E-learning series (almost 40 of them in total) made in Adobe Captivate. The last learnings had both a html and flash output, under scorm standard.
