@@ -9,3 +9,5 @@ drugstoreGame: A game for a drugstore laboratory, on which the user must match t
 drugstoreApp: Made with Symfony 1.4, an app for keeping track the user's weight. When the user registers he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
 
 transferBank: An app made in Java with websphere using beans (mandatory uses) in order to make bank account transfers in the same bank.
+
+bootstrapPages: Web pages using bootstrap and jquery framework. The pages are in process to be implemented as we speak. You can see the home page here: http://goo.gl/Dv7ovK.
