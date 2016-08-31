@@ -358,16 +358,19 @@ public class inicio
 
     function llenarObjeto()
     {
-        errorXML=false;
-        System.useCodepage=true;
-        dataXml=new XML();
-        dataXml.ignoreWhite=true;
+
         var cad4:String=new String;
         var noNull:Boolean=new Boolean;
         var k:Number;
         var nroBoletos2:Number=new Number;
-        noNull=false;
+        var cadH:String;
         var ordenV:Number=new Number;
+
+        errorXML=false;
+        System.useCodepage=true;
+        dataXml=new XML();
+        dataXml.ignoreWhite=true;
+        noNull=false;
         dataXml.onLoad=function(paso)	
         {
             if(paso)
@@ -445,7 +448,7 @@ public class inicio
                 trace ("Error en el xml");
             }
         };	
-        var cadH;
+      
         cadH="http://"+server+"/api/get_game/"+token +"/resultado.xml";
         cadH="xml/"+token +"/prueba2.xml";		 
         dataXml.load(cadH+"?"+Math.random());	
@@ -530,26 +533,31 @@ public class inicio
         }
     }
 
-
     /** 
     *   Esta función recibe por parametro el nombre y el correo a guardar 
     */
     function alarmaTrue() {
         /*Creamos una nueva variable de tipo SharedObject, esta sera la
         que nos guarde datos en el disco del usuario*/
+        
         var disco_so:SharedObject;
+        
         /*El metodo "getLocal" del objeto "SharedObject" me devuelve
         algo asi como un archivo que le pase por parametro, en este
         caso, el archivo se llama "datos", si no existe, lo crea*/
+        
         disco_so = SharedObject.getLocal("alarma");
+        
         /*Los SharedObjects tiene una colección llamada "data", a esta
         le asignamos todas las variables que vamos a guardar en el 
         archivo, en mi caso les puse "elNombre" y "elCorreo"
         Les asigno los datos que llegaron como parametro de la función*/
+        
         disco_so.data.activo = "true";
         
         /*Por ultimo, esa instrucción del SharedObject guarda en el disco
         los datos*/
+        
         disco_so.flush();
     }
     
@@ -560,10 +568,14 @@ public class inicio
     */
     function cargarDatos(dato) {
         //Estas 2 lineas son iguales que en la anterior función
+        
         var disco_so:SharedObject;
+        
         /*Pero aqui, cuando le pedimos que sabra el archivo "datos", 
         automaticamente carga toda la información contenida en ese archivo*/
+        
         disco_so = SharedObject.getLocal("datos");
+        
         //Si el parametro que llego fue "nombre"....
         if (dato == "nombre") {
             //Retornara el nombre que guardamos en el archivo
