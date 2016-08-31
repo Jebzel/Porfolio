@@ -6,3 +6,4 @@ gamblingGame:  The code is from an electronic betting game. It was made in Actio
 
 drugstoreGame: A game for a drugstore laboratory, on which the user must match the illness to the drug/product designed to heal it. Made on flash cs6 and Actionscript. You can watch the videos of the app here: https://goo.gl/E7B9gm (the video has no sound because I captured it from quicktime).
  
+drugstoreApp: A app made with Symfony 1.4.
