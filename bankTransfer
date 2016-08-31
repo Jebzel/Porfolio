@@ -1,0 +1,236 @@
+package transferencia;
+
+import com.ibm.ws.ejbpersistence.beanextensions.*;
+import com.ibm.websphere.cpmi.*;
+
+/**
+ * Bean implementation class for Enterprise Bean: Movimiento
+ */
+public class ConcreteMovimiento extends transferencia.MovimientoBean implements javax.ejb.EntityBean, ConcreteBean {
+	/**
+	 * setEntityContext
+	 */
+	public void setEntityContext(javax.ejb.EntityContext ctx) {
+		super.setEntityContext(ctx);
+		instanceExtension.setEntityContext(ctx);
+	}
+	/**
+	 * unsetEntityContext
+	 */
+	public void unsetEntityContext() {
+		super.unsetEntityContext();
+		instanceExtension.unsetEntityContext();
+	}
+	/**
+	 * ejbActivate
+	 */
+	public void ejbActivate() {
+			super.ejbActivate();
+			instanceExtension.ejbActivate();
+	}
+	/**
+	 * ejbLoad
+	 */
+	public void ejbLoad() {
+		instanceExtension.ejbLoad();
+	}
+	/**
+	 * ejbPassivate
+	 */
+	public void ejbPassivate() {
+		super.ejbPassivate();
+		instanceExtension.ejbPassivate();
+	}
+	/**
+	 * ejbRemove
+	 */
+	public void ejbRemove() throws javax.ejb.RemoveException {
+		super.ejbRemove();
+		instanceExtension.ejbRemove();
+	}
+	/**
+	 * ejbStore
+	 */
+	public void ejbStore() {
+		super.ejbStore();
+		instanceExtension.ejbStore();
+	}
+	private ConcreteBeanInstanceExtension instanceExtension;
+	/**
+	 * _WSCB_getInstanceInfo
+	 */
+	public PMConcreteBeanInstanceInfo _WSCB_getInstanceInfo() {
+			return instanceExtension;
+	}
+	/**
+	 * ConcreteMovimiento_3a05e904
+	 */
+	public ConcreteMovimiento_3a05e904() {
+		super();
+		instanceExtension = ConcreteBeanInstanceExtensionFactory.getInstance(this);
+	}
+	/**
+	 * getInjector
+	 */
+	private transferencia.websphere_deploy.MovimientoBeanInjector_3a05e904 getInjector() {
+		return (transferencia.websphere_deploy.MovimientoBeanInjector_3a05e904)instanceExtension.getInjector();
+	}
+	/**
+	 * hydrate
+	 */
+	public void hydrate(Object inRecord) {
+			transferencia.websphere_deploy.MovimientoBeanCacheEntry_3a05e904 record = (transferencia.websphere_deploy.MovimientoBeanCacheEntry_3a05e904) inRecord;;
+			id = record.getId();
+			fecha = record.getFecha();
+			monto = record.getMonto();
+			tipo = record.getTipo();
+			id_cuenta = record.getId_cuenta();
+		super.ejbLoad();
+	}
+	/**
+	 * resetCMP
+	 */
+	public void resetCMP() {
+			id = 0;
+			fecha = null;
+			monto = 0.0;
+			tipo = null;
+			id_cuenta = 0;
+	}
+	/**
+	 * resetCMR
+	 */
+	public void resetCMR() {
+	}
+	/**
+	 * ejbFindByPrimaryKey
+	 */
+	public transferencia.MovimientoKey ejbFindByPrimaryKey(transferencia.MovimientoKey primaryKey) throws javax.ejb.FinderException {
+		return (transferencia.MovimientoKey)instanceExtension.ejbFindByPrimaryKey(primaryKey);
+	}
+	/**
+	 * ejbFindByPrimaryKey
+	 */
+	public Object ejbFindByPrimaryKey(java.lang.Object pk) throws javax.ejb.FinderException {
+		return ejbFindByPrimaryKey((transferencia.MovimientoKey)pk);
+	}
+	/**
+	 * ejbFindByPrimaryKeyForCMR_Local
+	 */
+	public transferencia.MovimientoKey ejbFindByPrimaryKeyForCMR_Local(transferencia.MovimientoKey pk) throws javax.ejb.FinderException {
+		return (transferencia.MovimientoKey)instanceExtension.ejbFindByPrimaryKey(pk);
+	}
+	/**
+	 * ejbCreate
+	 */
+	public transferencia.MovimientoKey ejbCreate(long id, double monto, java.lang.String tipo, int cta) throws javax.ejb.CreateException {
+		super.ejbCreate(id, monto, tipo, cta);
+		return (transferencia.MovimientoKey)instanceExtension.ejbCreate();
+	}
+	/**
+	 * ejbPostCreate
+	 */
+	public void ejbPostCreate(long id, double monto, java.lang.String tipo, int cta) throws javax.ejb.CreateException {
+		super.ejbPostCreate(id, monto, tipo, cta);
+		instanceExtension.ejbPostCreate();
+	}
+	/**
+	 * createPrimaryKey
+	 */
+	public Object createPrimaryKey() {
+		transferencia.MovimientoKey pk = new transferencia.MovimientoKey();
+		pk.id = this.id;
+		return pk;
+	}
+	/**
+	 * getNumberOfFields
+	 */
+	public int getNumberOfFields() {
+		return 5;
+	}
+	/**
+	 * Implementation field for persistent attribute: id
+	 */
+	public long id;
+	/**
+	 * Get accessor for persistent attribute: id
+	 */
+	public long getId() {
+		return id;
+	}
+	/**
+	 * Set accessor for persistent attribute: id
+	 */
+	public void setId(long newId) {
+		instanceExtension.markDirty(0,id,newId);
+		id = newId;
+	}
+	/**
+	 * Implementation field for persistent attribute: fecha
+	 */
+	public java.sql.Date fecha;
+	/**
+	 * Get accessor for persistent attribute: fecha
+	 */
+	public java.sql.Date getFecha() {
+		return fecha;
+	}
+	/**
+	 * Set accessor for persistent attribute: fecha
+	 */
+	public void setFecha(java.sql.Date newFecha) {
+		instanceExtension.markDirty(1,fecha,newFecha);
+		fecha = newFecha;
+	}
+	/**
+	 * Implementation field for persistent attribute: monto
+	 */
+	public double monto;
+	/**
+	 * Get accessor for persistent attribute: monto
+	 */
+	public double getMonto() {
+		return monto;
+	}
+	/**
+	 * Set accessor for persistent attribute: monto
+	 */
+	public void setMonto(double newMonto) {
+		instanceExtension.markDirty(2,monto,newMonto);
+		monto = newMonto;
+	}
+	/**
+	 * Implementation field for persistent attribute: tipo
+	 */
+	public java.lang.String tipo;
+	/**
+	 * Get accessor for persistent attribute: tipo
+	 */
+	public java.lang.String getTipo() {
+		return tipo;
+	}
+	/**
+	 * Set accessor for persistent attribute: tipo
+	 */
+	public void setTipo(java.lang.String newTipo) {
+		instanceExtension.markDirty(3,tipo,newTipo);
+		tipo = newTipo;
+	}
+	/**
+	 * Implementation field for persistent attribute: id_cuenta
+	 */
+	public int id_cuenta;
+	/**
+	 * Get accessor for persistent attribute: id_cuenta
+	 */
+	public int getId_cuenta() {
+		return id_cuenta;
+	}
+	/**
+	 * Set accessor for persistent attribute: id_cuenta
+	 */
+	public void setId_cuenta(int newId_cuenta) {
+		instanceExtension.markDirty(4,id_cuenta,newId_cuenta);
+		id_cuenta = newId_cuenta;
+	}
+}
