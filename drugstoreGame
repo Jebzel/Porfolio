@@ -1,0 +1,234 @@
+/*
+ * juego.class
+ *
+ * Versión 2.4
+ *
+ * 4 abril 2011
+ *
+ * Para uso exclusivo de Galeno
+ */
+
+import boleto;
+ 
+/**
+ * La clase juego inicializa todas las variables y empieza a bajar los padecimientos en pantalla.
+ */
+public class juego 
+{    
+    var star;
+    var star2;
+    var star3;
+    var drop;
+    var home;
+    var cadena:String;
+    var drop;
+    var xx;
+    var yy;
+    var tipo1x=Number;
+    var tipo2x=Number;
+    var tipo3x=Number;
+    var starTimer: Number;
+    var cad;
+
+    function juego():Void
+    {    
+        home = this;
+        tipo1x=130,25;
+        tipo2x=395,70;
+        tipo3x=660,20;
+        starTimer=0;
+            
+        muerto1._visible=false;
+        muerto2._visible=false;
+        muerto3._visible=false;
+        tiocolfen1._visible=false;
+        tiocolfen2._visible=false;
+        tiocolfen3._visible=false;
+        xerograx1._visible=false;
+        xerograx2._visible=false;
+        xerograx3._visible=false;
+        esoz1._visible=false;
+        esoz2._visible=false;
+        esoz3._visible=false;
+        sulamp1._visible=false;
+        sulamp2._visible=false;
+        sulamp3._visible=false;
+        fludil1._visible=false;
+        fludil2._visible=false;
+        fludil3._visible=false;
+
+        count1=0;
+        count2=0;
+        count3=0;
+        barra.swapDepths(1000); 
+        prod.swapDepths(1001);
+        prod2.swapDepths(1002);
+        prod3.swapDepths(1003);
+        prod4.swapDepths(1004);
+        prod5.swapDepths(1005);
+    
+
+    prod.onPress = function(){
+        xx = this._x;
+        yy = this._y;
+        startDrag(this, true);
+    }
+    prod2.onPress = function(){
+        xx2 = this._x;
+        yy2 = this._y;
+        startDrag(this, true);
+    }
+    prod3.onPress = function(){
+        xx3 = this._x;
+        yy3 = this._y;
+        startDrag(this, true);
+    }
+    prod4.onPress = function(){
+        xx4 = this._x;
+        yy4 = this._y;
+        startDrag(this, true);
+    }
+    prod5.onPress = function(){
+        xx5 = this._x;
+        yy5 = this._y;
+        startDrag(this, true);
+    }
+
+    prod.onRelease = function(){
+        this.stopDrag();	
+        cadena=this._droptarget;
+        drop=cadena;
+        cadena = cadena.substr(1,4);
+        if( cadena == "Enf1" )
+        {
+            var mcName:MovieClip = eval(drop);
+            
+            if (mcName._x==tipo1x)contB1.text=int(contB1.text)+1;
+            else if (mcName._x==tipo2x)contB2.text=int(contB2.text)+1;
+            else  contB3.text=int(contB3.text)+1;
+            mcName.gotoAndPlay(2);
+            contTo++;
+        }
+        this._x = xx;
+        this._y = yy;
+        
+    }
+
+    prod2.onRelease = function(){
+        this.stopDrag();	
+        cadena=this._droptarget;
+        drop=cadena;
+        cadena = cadena.substr(1,4);
+        if( cadena == "Enf2" )
+        {
+            var mcName:MovieClip = eval(drop);
+            
+            if (mcName._x==tipo1x)contB1.text=int(contB1.text)+1;
+            else if (mcName._x==tipo2x)contB2.text=int(contB2.text)+1;
+            else  contB3.text=int(contB3.text)+1;
+            mcName.gotoAndPlay(2);
+            contTo++;
+        }
+        this._x = xx2;
+        this._y = yy2;
+    }
+    prod3.onRelease = function(){
+        this.stopDrag();	
+        cadena=this._droptarget;
+        drop=cadena;
+        cadena = cadena.substr(1,4);
+        if( cadena == "Enf3" )
+        {
+            var mcName:MovieClip = eval(drop);
+            
+            if (mcName._x==tipo1x)contB1.text=int(contB1.text)+1;
+            else if (mcName._x==tipo2x)contB2.text=int(contB2.text)+1;
+            else  contB3.text=int(contB3.text)+1;
+            mcName.gotoAndPlay(2);
+            contTo++;
+        }
+        this._x = xx3;
+        this._y = yy3;
+    }
+    prod4.onRelease = function(){
+        this.stopDrag();	
+        cadena=this._droptarget;
+        drop=this._droptarget;
+        cadena = cadena.substr(1,4);
+        if( cadena == "Enf4" )
+        {
+            var mcName:MovieClip = eval(drop);
+            
+            if (mcName._x==tipo1x)contB1.text=int(contB1.text)+1;
+            else if (mcName._x==tipo2x)contB2.text=int(contB2.text)+1;
+            else  contB3.text=int(contB3.text)+1;
+            contTo++;
+            mcName.gotoAndPlay(2);
+        }
+        this._x = xx4;
+        this._y = yy4;
+    }
+
+    prod5.onRelease = function(){
+        this.stopDrag();        
+        cadena=this._droptarget;
+        drop=cadena;
+        cadena = cadena.substr(1,4);
+
+        if( cadena == "Enf5" ){
+            var mcName:MovieClip = eval(drop);
+        
+            if (mcName._x==tipo1x)contB1.text=int(contB1.text)+1;
+            else if (mcName._x==tipo2x)contB2.text=int(contB2.text)+1;
+            else  contB3.text=int(contB3.text)+1;
+            mcName.gotoAndPlay(2);/
+            contTo++;
+        }
+
+        this._x = xx5;
+        this._y = yy5;	
+    }
+}
+
+
+    function onLoad()
+    {
+        starTimer = 0;
+    }
+
+    function onEnterFrame()
+    {
+		barra.timeText.text = myTimer;
+		myTimer.start();
+        starTimer += 1;
+
+	   
+	    if(starTimer > timt && _currentframe ==2)
+        {
+            starTimer = 0;
+			var ran;
+			var ran2 = random(3)+1;
+
+			if (ran2==1)
+			{
+			  ran =random(5)+1;
+			  cad = "Enf"+ran;
+			  star = _root.attachMovie("Enf"+ran, cad + indice,indice); indice++;
+			  star._x=tipo1x;
+			}else if (ran2==2)
+			{
+				ran =random(5)+1;
+			 	cad = "Enf"+ran;
+			 	star2 = _root.attachMovie("Enf"+ran, cad + indice,indice); indice++;
+				star2._x=tipo2x;
+			} 
+			else if (ran2==3)
+			{
+				ran =random(5)+1;
+			 	cad = "Enf"+ran;
+			 	star3 = _root.attachMovie("Enf"+ran, cad + indice, indice); indice++;
+				star3._x=tipo3x;
+			}	
+        }
+    }
+}
