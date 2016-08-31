@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta name="name" content="OOBI Networks" />
+<meta name="description" content="wisp wifi installer managed solutions" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>Home</title>
+<link href="Content/theme.css" rel="stylesheet"/>
+<link href="Content/site.css" rel="stylesheet"/>
+<script src="Scripts/jquery-2.2.3.js"></script>
+<script src="Scripts/jquery.validate.js"></script>
+<script src="Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="Scripts/site.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <img src="Images/logo.png" alt="OOBI Networks logo" /> </div>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="nav navbar-nav navbar-right text-center">
+          <li class=""> <a class="text-uppercase" href="/Account">Account</a> </li>
+          <li class=""> <a class="text-uppercase" href="/Support">Help</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="section-parallax"> 
+  <div class="parallax-image  parallax-1"></div>
+  <div class="parallax-title">
+    <div class="container">
+      <div class="row">
+        <div class=" col-xs-12">
+          <div class="parallax-caption">
+            <h1>Welcome to OOBI Networks</h1>
+            <h3>We provide WiFi hotspot solutions for your business, anywhere. <!--And what's more, our service is managed. We do it all, leaving you to run your business.--></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-standard-sm back-white">
+  <div class="container">
+    <div class="row   vertical-center">
+      <div class=" col-xs-12 col-sm-6  col-sm-push-6 "><img src="Images/image1.jpg" class="img-band  img-responsive pull-adjust-right" /></div>
+      <div class="col-xs-12  col-sm-6 col-sm-pull-6  text-justify">
+        <h1 class="text-center">Wifi & your busines</h1>
+        <hr>
+        <br>
+         
+        <p>Whether you operate a coffee shop, restaurant, leisure centre, caravan site or any other place where people meet either for leisure or business, your customers may well decide to visit you depending on whether your location has a hotspot.</p>
+        <p>By providing a hotspot for your customers you will:</p>
+        <p><span class="glyphicon glyphicon-ok Oobi-green" aria-hidden="true"></span> Win business over your competitors who don't provide Internet access </p>
+        <p><span class="glyphicon glyphicon-ok Oobi-green" aria-hidden="true"></span> Level the playing field against those competitors already providing access </p>
+        <p><span class="glyphicon glyphicon-ok Oobi-green" aria-hidden="true"></span> Generate a revenue stream by charging for the Internet access you provide </p>
+                
+        <p>Be the first business type in your area to offer Internet access to your customers and watch the extra revenue roll in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-parallax">
+  <div class="parallax-image  parallax-2"></div>
+  <div class="parallax-title">
+    <div class="container">
+      <div class="row">
+        <div class=" col-xs-12">
+          <div class="parallax-caption caption-2">
+            <h1>Find out how we can generate you revenue with our unique approach: </h1>
+            <h3>No costs, no liabilities, no risk.
+              Start earning immediately and
+              generate new customers</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-standard-sm back-white">
+  <div class="container">
+    <div class="row  vertical-center">
+      <div class=" col-xs-12"><img src="Images/image2.jpg" class="img-band  img-responsive pull-adjust-right" /></div>
+      <div class="col-xs-12  text-justify">
+        <h1 class="text-center">Our service</h1>
+        <hr>
+        <p>Once our hotspot systems are installed at your site your customers can enjoy Internet access around the clock, 365 days a year. You don't need to change anything about the way your business operates - you don't even need to be present! Our intelligent access points take care of everything.</p>
+        <p> When your customers switch on their wireless device they will automatically detect our access point network. They can then purchase Internet access time using our attractively priced tariffs. Payment is carried out online, using PayPal or credit/debit cards. It's a simple process and takes only a minute or so for your customers to be online and accessing the Internet through our high speed wireless network.</p>
+        <p> A slice of the revenue from every transaction is automatically sent to you and you can use our online management system to track the financial performance of your site whenever you want.</p>
+        <p> Support and assistance is available online for your customers and you can even customise our hotspot to provide useful information and announcements to your customers such as news, offers, events and promotions.</p>
+        <p> The law requires that a record of your customers access is maintained. Our systems do this for you so that you can be confident you are offering a fully compliant service. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-standard-sm back-grey">
+  <div class="container">
+    <div class="row   vertical-center">
+      <div class=" col-xs-12 col-sm-6  col-sm-push-6 "><img src="Images/image3.jpg" class="img-band  img-responsive pull-adjust-right" /></div>
+      <div class="col-xs-12  col-sm-6 col-sm-pull-6  text-justify">
+        <h1 class="text-center"> Benefits to you</h1>
+        <hr>
+        <p>We provide a fully managed hotspot solution for your location. We take care of everything so that you can focus on your business. Our service includes:
+          A comprehensive site survey. Our professional and friendly engineers will visit your site to carry out a comprehensive and no-obligation site survey.
+          Network planning and design. Our dedicated team of designers will create a radio coverage plan and installation schedule based on the information we obtain from the site survey.</p>
+        <p>Installation. We will install all the necessary equipment, communication links and Internet connectivity needed to get your site up and running.
+          Operation. Our support team will monitor your hotspot network, manage customer access, operate the billing systems and provide technical support to you and your customers.</p>
+        <p> Maintenance. Our engineers are always on hand to fix problems and support your site. Our continuous monitoring system automatically alerts us to a problem, usually before you are even aware of it.</p>
+        <p> We also provide you with all of the necessary marketing material to make your customers aware of your new facilities. We train you in how the system operates so that you can deal with customer questions confidently. We help you every step of the way to ensure you offer the best possible service to your customers.</p>
+        <p> And best of all <strong> everything is free</strong>. No up-front payments, no installation costs, no communications fees, no risks or liabilities - nothing except a simple contract. We do all the work, you enjoy the benefits, including a slice of the revenue from every single sale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-standard-sm back-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12  text-justify">
+        <h1 class="text-center"> What next?</h1>
+        <hr>
+        <p>Would our system work at your site? What to do next?</p>
+        <p>You can book a free, no-obligation site survey right now. We will arrange a time to visit to suit you. We will talk through the service with you in more detail, answer any questions you might have and also carry out a survey of your site.</p>
+        <p>The site survey is quick and simple - we just need to understand the area of coverage you need to achieve and where our equipment can be installed.</p>
+        <p>To book your free survey, simply send us a <a href="mailto:contact@oobinetworks.com">contact email</a> and our sales support team will take care of everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row back-grey">
+      <div class="col-xs-12 col-sm-6 text-adjust-left"> <img src="Images/logosmaller.png" alt="OOBI Networks logo"/> </div>
+      <div class="col-xs-12 col-sm-6 text-adjust-right"> <span class="copyright">© 2016 <strong>OOBI Networks</strong>. All Rights Reserved</span> </div>
+    </div>
+  </div>
+</footer>
+<div id="popupModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body"> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
