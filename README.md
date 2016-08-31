@@ -4,5 +4,5 @@ These are some of the codes I've  been doing during my career at software develo
 
 gamblingGame:  The code is from an electronic betting game. It was made in Actionscript and flash cs6. You can watch the videos of the app here: https://goo.gl/JhXLIO.
 
-drugstoreGame: A game for a drugstore laboratory, on which the user must match the illness to the drug/product designed to heal it. Made on flash cs6 and Actionscript. You can watch the videos of the app here: https://goo.gl/E7B9gm (the video has no sound because I captured they from quicktime).
+drugstoreGame: A game for a drugstore laboratory, on which the user must match the illness to the drug/product designed to heal it. Made on flash cs6 and Actionscript. You can watch the videos of the app here: https://goo.gl/E7B9gm (the video has no sound because I captured it from quicktime).
  
