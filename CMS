@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProActivTax CMS - Edit Page</title>
+<link href="css/ProActivTax-theme.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<!-- Wrapper begin -->
+<div class="wrapper"> 
+  <!-- Menu  Section -->
+  <nav class="navbar navbar-default">
+    <div class="container"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="logo-brand"></a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <ul class="nav navbar-nav navbar-right text-center">
+          <li class="active"> <a href="#" class="text-uppercase">Home</a> </li>
+          <li> <a href="#" class="text-uppercase">Events and webinars</a> </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-expanded="false">Manage<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="#">Pages</a> </li>
+              <li> <a href="#">Streams</a> </li>
+              <li> <a href="#">Articles</a> </li>
+              <li> <a href="#">Images</a> </li>
+              <li class="divider"></li>
+              <li> <a href="#">Membership Types</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-expanded="false">Fred Tester<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="#">Account</a> </li>
+              <li class="divider"></li>
+              <li> <a href="#">Sign Out</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Menu Section --> 
+  
+  <!--  Edit Article  Section  -->
+  <section  class="edit-form" id="edit-page">
+    <div class="container-fluid  color2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12  col-sm-offset-2 col-sm-8 col-sm-offset-2 padding-div-15-bottom">
+            <h3 class="text-white"><img src="images/ico-edit.png" alt="ico-edit"> Edit Page</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row top-buffer">
+        <div class="col-xs-12  col-sm-offset-2 col-sm-8 col-sm-offset-2">
+          <form action="#" method="post" id="edit-page-form">
+            <div class="form-group">
+              <label class="control-label">Name</label>
+              <input class="form-control"  id="Name" name="Name" placeholder="Name" type="text" value="" />
+            </div>
+            <div class="form-group">
+              <label class="control-label">Title</label>
+              <input class="form-control"  id="Title" name="Title" placeholder="Title" type="text" value="" />
+            </div>
+            <div class="form-group">
+              <label class="control-label">Image Strapline</label>
+              <input class="form-control"  id="ImageStrapline" name="ImageStrapline" placeholder="Image Strapline" type="text" value="" />
+            </div>
+            <div class="form-group">
+                  <div class="checkbox">
+                    <label class="control-label">
+                      <input  id="MenuPage" name="MenuPage" type="checkbox" value="true" />
+                      <input name="MenuPage" type="hidden" value="false" />                     
+                      Menu Page </label>
+                  </div>
+             </div>
+             <div class="form-group">
+                  <label class="control-label">Menu Order</label><input class="form-control"  data-val="true" data-val-number="The field Menu Order must be a number." data-val-required="Enter the menu order" id="Order" name="Order" placeholder="Menu Order" type="number" value="0"/>
+             </div>
+             <div class="form-group">
+                  <div class="checkbox">
+                    <label class="control-label">
+                      <input checked="checked" class="disabled" data-val="true"  id="HomePage" name="HomePage" type="checkbox" value="true" />
+                      <input name="HomePage" type="hidden" value="false" />
+                      Home Page </label>
+                  </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Image</label>
+              <select class="form-control" id="ImageSelect" name="ImageSelect">
+                <option value="35">Apply now</option>
+                <option value="36">Apply now 2</option>
+                <option value="8">Balloons</option>
+                <option value="17">Calculator</option>
+                <option value="32">Chairs</option>
+                <option value="3">Clock</option>
+              </select>
+              <div class="thumbnail"> <img id="ThumbnailPreview" src="images/image1.png" class=" img-stretch "/> </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Left Stream</label>
+              <select class="form-control" id="LeftStreamId" name="LeftStreamId">
+                <option value="0">Nothing selected</option>
+                <option value="14">Events Left</option>
+                <option value="2">Home Centre</option>
+                <option selected="selected" value="1">Home Left</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Centre Stream</label>
+              <select class="form-control" id="CentreStreamId" name="CentreStreamId">
+                <option value="14">Events Left</option>
+                <option selected="selected" value="2">Home Centre</option>
+                <option value="1">Home Left</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Right Stream</label>
+              <select class="form-control" id="RightStreamId" name="RightStreamId">
+                <option selected="selected" value="0">Nothing selected</option>
+                <option value="14">Events Left</option>
+                <option value="2">Home Centre</option>
+                <option value="1">Home Left</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-offset-4 col-sm-4">
+                  <button type="submit" class="btn btn-primary btn-block center-block" id="button-save">Save</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  End Edit Article Section  -->
+  <div class="push "></div>
+</div>
+<!-- End Wrapper --> 
+<!--  Footer Section  -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 text-adjust-left padding-div-res-15-bottom"> <a href=""><img  src="images/logo2.png" alt="" title=""/></a> </div>
+      <div class="col-xs-12 col-md-6 text-adjust-right "> <span class="copyright">© 2016 <a href="http://ProActivTax.com" target="_blank"><strong>ProActivTax Tax Limited</strong></a>. All Rights Reserved </span></div>
+    </div>
+  </div>
+</footer>
+<!--  End Footer  -->
+</body>
+</html>
