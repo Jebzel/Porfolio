@@ -4,7 +4,7 @@ These are some of the codes I've  been doing during my career at software develo
 
 bootstrapPages: Web pages using bootstrap and jquery framework. The pages are in process to be implemented. You can see the home page <a href="http://goo.gl/Dv7ovK" target="_blank">here</a>.
 
-cms: A small content manager system using bootstrap and jquery. You can see a example page <a href="http://goo.gl/ecpUXo" target="_blank">here</a>, and the structure of the site <a href="http://goo.gl/zGoe7p" target="_blank">here</a>. 
+cms: A small content manager system using bootstrap and jquery. You can see a example page <a href="http://goo.gl/ecpUXo" target="_blank">here</a>. 
 
 drugstoreApp: Made with Symfony 1.4, an app for keeping track the user's weight. When the user registers he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
 
