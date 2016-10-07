@@ -1,0 +1,105 @@
+.boxgridA,.boxgrid2A, .boxgrid3A {
+	margin:0px; 
+	float:left;
+	
+	/*border: solid 2px #8399AF; */
+	overflow: hidden; 
+	position: relative;
+
+}
+.boxgridA img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgridA p{
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+.boxgrid2A img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgrid2A p{
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+.boxgrid3A img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgrid3A p{
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+
+.boxgridA{
+width: 115px;
+height: 80px;
+}
+
+.boxgrid2A{
+width: 179px;
+height: 300px; }
+
+.boxgrid3A{
+width: 180px;
+height: 340px; }
+
+.boxcaptionA{
+    
+    float: left;
+    position: absolute;
+   
+    height: 100px;
+    width: 100%;   
+}
+.captionfullA .boxcaptionA {
+    top: 260px;
+    left: 0;
+}
+.captionfull2A .boxcaptionA {
+    top: 300px;
+    left: 0;
+}
+.captionfull3A .boxcaptionA {
+    top: 340px;
+    left: 0;
+}
+.captionA .boxcaptionA {
+    top: 0px;
+    left: 0;
+}
+
+#posicion1A
+{
+margin-top: 70px;
+margin-left: 15px;
+}
+
+#posicion2A
+{
+margin-left: 0px;
+margin-top: 70px;
+}
+#posicion3A
+{
+margin-left: 0px;
+margin-top: 60px;
+}
+#posicion4A
+{
+margin-left: 100px;
+margin-top: 80px;
+}

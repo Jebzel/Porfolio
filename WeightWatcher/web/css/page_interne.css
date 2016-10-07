@@ -1,0 +1,535 @@
+
+/*---------------------------partie commune aux pages internes---------------------------*/
+
+#middle_content {	
+	/*hauteur minimum à mettre*/
+	min-height:550px;
+  	height:auto !important;
+  	height:550px;
+}
+
+#haut_slide {
+	top:-50px;
+}
+
+#top_content {
+	height:60px;	
+}
+
+/*-----fil_dariane-----*/
+
+#fil_dariane {
+	font:normal 10px verdana;
+	padding: 30px 0 0 43px;
+	width: 270px;
+	height: 25px;
+	position:relative;
+	z-index: 7000;
+}
+
+
+
+#fil_dariane a {
+	text-decoration: underline;
+}
+
+/*---------------colonne de gauche--------------*/
+
+#menu_left {
+	width:211px;
+	padding:60px 0 0 0;
+	float:left;
+}
+
+#menu_left h2 {
+	font-size: 22px;
+	margin-bottom: 25px;
+	margin-left: 33px;
+}
+
+#menu_left ul {
+	width:211px;
+}
+
+#menu_left ul li {
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height:11px;
+	display: inline;
+}
+
+#menu_left a {
+	display:block;
+	padding:3px 0 3px 48px;
+}
+
+#menu_left ul li ul li a {
+	padding:3px 0 3px 51px;
+}
+
+/*---------------colonne centrale---------------*/
+
+#actions {
+	width:403px;
+	height: 17px;
+	margin-left:35px;
+	margin-top: 15px;
+}
+
+#actions #share {
+	float:left;
+}
+
+#actions #options {
+	float:right;
+}
+
+#actions #options a#agrandir {
+	display:block;
+	float:right;
+	width:17px;
+	height: 12px;
+	cursor:pointer;
+}
+
+#actions #options a#retrecir {
+	display:block;
+	float:right;
+	width:12px;
+	height: 12px;
+	cursor:pointer;
+	margin-left: 5px;
+}
+
+#actions #options a#imprimer {
+	display:block;
+	float:right;
+	width:16px;
+	height: 12px;
+	margin-left: 12px;
+	cursor:pointer;
+}
+
+/*---------------colonne de droite--------------*/
+
+#liste_right {
+	float:right;
+	width:248px;
+	margin-top: 55px;
+}
+
+#liste_right a {
+	text-transform: uppercase;
+}
+
+/*-----outils_recherche-----*/
+
+#outils_recherche {
+	width:213px;
+	height:208px;
+	background:url(../images/fd_outilsrecherche.png) top left no-repeat;
+	padding:5px 10px 10px 25px;
+}
+
+#outils_recherche h3 {
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	font-size:18px;
+}
+
+#outils_recherche #recherche1 input#champ_nom {
+	width:167px;
+	border:1px solid #aaa9a9;
+	margin-right: 10px;
+	height: 17px;
+	color:#757575;
+	font:normal 10px verdana;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+
+#outils_recherche #recherche2 select {
+	width:187px;
+	border:1px solid #aaa9a9;
+	height: 23px;
+	color:#757575;
+	font:normal 10px verdana;
+	margin-bottom: 2px;
+}
+
+#outils_recherche #recherche2 input.fleche {
+	float:right;
+	margin-right: 10px;
+}
+
+#outils_recherche p {
+	padding-bottom:5px;
+	padding-top:10px;
+	font:normal 11px arial;
+}
+
+/*-----sinscrire_enseignant-----*/
+
+#liste_right #sinscrire_enseignant {
+	width:205px;
+	height:auto;
+	background:url(../images/fd_encart.png) bottom left no-repeat;
+	padding:0 20px 25px 25px;
+}
+
+#liste_right #sinscrire_enseignant h3 {
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	font-size:18px;
+}
+
+#liste_right #sinscrire_enseignant form input {
+	width:185px;
+	height: 18px;
+	border:1px solid #959494;
+	font:normal 10px verdana;
+	color:#525252;
+	padding: 3px 0 0 5px;
+}
+
+#liste_right #sinscrire_enseignant form input#valid {
+	width:19px;
+	height: 19px;
+	background:url(../images/fleche_bleufonce.gif) top right no-repeat;
+	border:none;	
+	float:right;
+	margin-right: 20px;
+}
+
+#liste_right #sinscrire_enseignant a {
+	text-decoration:underline;
+	float:left;
+	font:normal 10px verdana;
+	color:#2f2f2f;
+	text-transform: none;
+}
+
+#liste_right #sinscrire_enseignant p {
+	margin:0 0 5px 0;
+}
+
+/*-----trouver_evenement-----*/
+
+#trouver_evenement {
+	width:205px;
+	height:170px;
+	background:url(../images/fd_encart.png) bottom left no-repeat;
+	padding:0 20px 25px 25px;
+	margin-top: 20px;
+}
+
+#trouver_evenement h3 {
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	font-size:18px;
+}
+
+#trouver_evenement select {
+	width:187px;
+	border:1px solid #aaa9a9;
+	height: 23px;
+	color:#757575;
+	font:normal 10px verdana;
+	margin-bottom: 2px;
+}
+
+#trouver_evenement input.fleche {
+	float:right;
+	margin-right: 10px;
+}
+
+#trouver_evenement p {
+	padding-bottom:5px;
+	padding-top:10px;
+	font:normal 11px arial;
+}
+
+#trouver_evenement.big {
+	height:220px;
+}
+
+#trouver_evenement a {
+	padding:5px 25px 5px 0;
+	font-size:12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float:right;
+	background:transparent url(../images/actualites/fleche.gif) no-repeat scroll right center;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+
+/*-----encart_droit-----*/
+
+#liste_right .encart_droit {
+	width:205px;
+	height:auto;
+	background:url(../images/fd_encart.png) bottom left no-repeat;
+	padding:0 20px 25px 25px;
+	margin-top: 20px;
+}
+
+#liste_right .encart_droit h3 {
+	font-size:18px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#liste_right .encart_droit.kit h3 {
+	font-size:12px;
+	color:#ffffff;
+	text-transform: none;
+}
+
+#liste_right .encart_droit.kit h3 span {
+	padding:1px 5px 1px 7px;
+	background-color: #226e9c;
+}
+
+#liste_right .encart_droit h4 {
+	font-size:14px;
+	margin-bottom: 5px;
+}
+
+#liste_right .encart_droit.kit h4 {
+	font-size:17px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+#liste_right .encart_droit h5 {
+	font-size:11px;
+	text-transform: uppercase;
+}
+
+#liste_right .encart_droit img {
+	margin-bottom:5px;
+}
+
+#liste_right .encart_droit p {
+	font:normal 10px verdana;
+	color:#2f2f2f;
+	line-height:15px;
+	width: 195px;
+	margin-bottom: 20px;
+}
+
+#liste_right .encart_droit a {
+	float:right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+#liste_right .encart_droit .video {
+	position:relative;
+}
+
+#liste_right .encart_droit .video .grande_ombre {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 186px;
+	height: 150px;
+	background: url(../images/grande_ombre.png) no-repeat;
+}
+
+#liste_right .encart_droit .video .petite_ombre {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 195px;
+	height: 105px;
+	background: url(../images/petite_ombre.png) no-repeat;
+}
+
+#liste_right .encart_droit a#deconnexion {
+	float:left;
+	font:normal 10px verdana;
+	color:#2f2f2f;
+	margin-top: -10px;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+#liste_right .encart_droit a.normal {
+	float:left;
+	font:normal 10px verdana;
+	color:#2f2f2f;
+	text-transform: none;
+	margin: 0;
+}
+
+#liste_right .encart_droit input#tendance {
+	width:167px;
+	border:1px solid #aaa9a9;
+	margin-right: 10px;
+	height: 17px;
+	color:#757575;
+	font:normal 10px verdana;
+	padding-top: 3px;
+	padding-left: 3px;
+	margin-bottom: 20px;
+}
+
+/*---------------boutons en tout genre--------------*/
+
+/*-----bouton lecture-----*/
+
+a.lecture {
+	display:block;
+	width:49px;
+	height: 49px;
+	position:absolute;
+	top:47px;
+	left:70px;
+}
+
+/*-----lien plus-----*/
+
+a.plus, a.plus2 {
+	display: block;
+	width:20px;
+	height: 20px;
+}
+
+/*-----bouton fleche-----*/
+
+input.fleche {
+	width:20px;
+	height: 20px;
+	border:none;
+}
+
+a.fleche {
+	display:block;
+	width:20px;
+	height: 20px;
+}
+
+/*-----lien texte + image fleche-----*/
+
+a.fleche_texte {
+	padding:5px 30px 5px 0;
+	font-size:12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float:right;
+}
+
+a.plus_texte {
+	padding:5px 30px 5px 0;
+	font-size:12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float:right;
+}
+
+input.fleche_texte {	
+	padding:5px 30px 5px 0;
+	font-size:12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float:right;
+	border:none;
+}
+
+/*-----bouton valider-----*/
+
+input#valider {
+	border:none;
+	width:72px;
+	height: 19px;
+	float:right;
+	cursor:pointer;
+}
+
+#liste_right input#valider {
+	margin-right:10px;
+}
+
+
+#liste_right .encart_droit p.lien_gris a {
+	color: #2F2F2F;
+	font: normal 11px arial;
+	text-transform: none;
+	float:left
+}
+
+
+
+
+/*-----se connecter espace presse-----*/
+
+#liste_right .encart_droit #sidentifier {
+	height: 140px;
+	width: 195px;
+}
+
+#liste_right .encart_droit #sidentifier form input {
+	width:185px;
+	height: 18px;
+	border:1px solid #959494;
+	font:normal 10px verdana;
+	color:#525252;
+	padding: 3px 0 0 5px;
+}
+
+#liste_right .encart_droit #sidentifier form input#valid {
+	width:19px;
+	height: 19px;
+	background:url(../images/fleche_bleufonce.gif) top right no-repeat;
+	border:none;	
+	float:right;
+}
+
+#liste_right .encart_droit #sidentifier a {
+	text-decoration:underline;
+	float:left;
+	text-transform: none;
+	color:#2F2F2F;
+}
+
+#liste_right .encart_droit #sidentifier p {
+	margin:0 0 2px 0;
+}
+
+#liste_right .encart_droit #sinscrire {
+	border-top:1px solid #ededed;
+	width: 195px;
+	padding-top: 5px;
+	height: 30px;
+	margin-top: 5px;
+}
+
+#liste_right .encart_droit #sinscrire a {
+	display:block;
+	width:195px;
+	height: 20px;
+	background:url(../images/fleche_bleufonce.gif) top right no-repeat;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+#liste_right .encart_droit #logue h3 em, #liste_right .encart_droit #logue h3 strong {
+	font-size:19px;
+}
+
+
+/*---------------boutons en tout genre--------------*/
+
+
+
+
+
+#liste_right .encart_droit #sidentifier {
+   height:160px;
+}
+
+
+

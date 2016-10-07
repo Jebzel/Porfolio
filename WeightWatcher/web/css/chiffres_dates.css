@@ -1,0 +1,226 @@
+
+
+/* couleur jaune clair : #f9ca10;
+/* couleur jaune fonce : #edb956;
+
+
+/*-----fil_dariane-----*/
+
+/*foncé*/
+#fil_dariane, #fil_dariane a {
+	color:#edb956;
+}
+
+/*-----menu_left-----*/
+
+/*foncé*/
+#menu_left h2, #menu_left a {
+	color:#edb956;
+}
+
+#menu_left ul li a {
+	background:url(../../images/chiffres_dates/puce_ronde_menu.gif) 33px 7px no-repeat;
+}
+
+#menu_left ul li a.ouvert {
+	background:url(../../images/chiffres_dates/fleche_ouvert.gif) 33px 5px no-repeat;
+}
+
+#menu_left ul li a.ferme {
+	background:url(../../images/chiffres_dates/fleche_ferme.gif) 33px 5px no-repeat;
+}
+
+#menu_left ul li ul li a {
+	background:none;
+}
+
+#menu_left ul li ul li a:hover, #menu_left ul li ul li a.on {
+	background-image:none;
+	background-color:#edb956;
+}
+
+/*foncé*/
+#menu_left ul li a:hover, #menu_left ul li a.on {
+	color:#fff;
+	background:url(../../images/structure/puce_ronde_blanche.gif) 33px 7px no-repeat;
+	background-color:#edb956;
+}
+
+#menu_left ul li a.ferme:hover, #menu_left ul li a.ferme.on {
+	color:#fff;
+	background:url(../../images/structure/puce_ferme_blanche.gif) 33px 5px no-repeat;
+	background-color:#edb956;
+}
+
+#menu_left ul li a.ouvert:hover, #menu_left ul li a.ouvert.on {
+	color:#fff;
+	background:url(../../images/structure/puce_ouvert_blanche.gif) 33px 5px no-repeat;
+	background-color:#edb956;
+}
+
+/*-----home_categorie-----*/
+
+/*clair*/
+#texte_article {
+	color:#f9ca10;
+}
+
+/*foncé*/
+#outils_recherche {
+	color:#edb956;
+}
+
+/*-----liste_selection-----*/
+
+/*foncé*/
+#liste, #liste_right, #liste_right a {
+	color:#edb956;
+}
+
+#liste #titre_liste {
+	border-bottom:1px solid #f9ca10;
+}
+
+/*clair*/
+#liste h6, #liste h3 {
+	color:#f9ca10;
+}
+
+/*-----article-----*/
+
+/*clair*/
+#recette, #championnat, #championnat .titre_prix p, a.retour_article {
+	color:#f9ca10;
+}
+
+/*foncé*/
+#recette h4, #championnat h4 {
+	color:#edb956;
+}
+
+#recette #titre_recette, #championnat #titre_championnat  {
+	border-bottom:1px solid #f9ca10;
+}
+
+/*foncé*/
+#recette ul.liste1 li {
+	color:#edb956;
+	background:url(../../images/chiffres_dates/puce_jaune.gif) 0 5px no-repeat;
+}
+
+/*clair*/
+#recette ul.liste2 li, #championnat ul li {
+	background:url(../../images/chiffres_dates/puce_jaune.gif) 0 5px no-repeat;
+}
+
+/*foncé*/
+#tooltip {
+	color:#edb956;
+}
+
+#visuel #encart_rond,#feedback #encart_rond {
+	background:url(../../images/chiffres_dates/fd_rond.png) top left no-repeat;
+}
+
+/*foncé*/
+#recette p.chapeau, #recette strong.couleur, #recette p.important {
+	color:#edb956;
+}
+
+a#agrandir {
+	background:url(../../images/chiffres_dates/agrandir.gif) bottom left no-repeat;
+}
+
+a#retrecir {
+	background:url(../../images/chiffres_dates/retrecir.gif) bottom left no-repeat;
+}
+
+a#imprimer {
+	background:url(../../images/chiffres_dates/imprimer.gif) bottom left no-repeat;
+}
+
+/*-----a_lire-----*/
+
+/*foncé*/
+#lire {
+	color:#edb956;
+}
+
+/*clair*/
+#lire h3 {
+	color:#f9ca10;
+}
+
+#lire #titre_lire {
+	border-bottom:1px solid #f9ca10;
+}
+
+/*-----brochure-----*/
+
+/*clair*/
+#brochure {
+	color:#f9ca10;
+}
+
+/*foncé*/
+#brochure h4 {
+	color:#edb956;
+}
+
+#brochure #titre_brochure {
+	border-bottom:1px solid #f9ca10;
+}
+
+/*-----lien plus-----*/
+
+/*clair*/
+a.plus {
+	background:url(../../images/chiffres_dates/plus_jaune.gif) top left no-repeat;
+}
+
+/*foncé*/
+a.plus2 {
+	background:url(../../images/chiffres_dates/plus_jaune.gif) top left no-repeat;
+}
+
+/*-----bouton fleche-----*/
+
+input.fleche, a.fleche {
+	background:url(../../images/chiffres_dates/fleche_jaune.gif) top left no-repeat;
+}
+
+/*-----lien texte + image fleche-----*/
+
+a.fleche_texte, input.fleche_texte {
+	background:url(../../images/chiffres_dates/fleche_jaune.gif) center right no-repeat;	
+	color:#eb8313;
+}
+
+input#valider {
+	background:url(../../images/a_table/valider.gif) bottom left no-repeat;
+}
+
+/*-----bouton lecture-----*/
+
+a.lecture {
+	background:url(../../images/a_table/lecture.png) top left no-repeat;
+}
+
+/*-----pagination-----*/
+
+a.precedent {
+	background:url(../../images/chiffres_dates/precedent.gif) top left no-repeat;
+}
+
+/*clair*/
+#pagination2 ul li a {
+	color:#f9ca10;
+}
+
+a.suivant {
+	background:url(../../images/chiffres_dates/suivant.gif) top left no-repeat;
+}
+#menu_left ul li a.ferme {
+	background:url(../../images/chiffres_dates/fleche_ferme.gif) 33px 5px no-repeat;
+}
+

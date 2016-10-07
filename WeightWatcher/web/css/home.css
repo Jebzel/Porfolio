@@ -1,0 +1,113 @@
+
+#home h3{ margin: 10px 10px 0 10px; color:#FFF; font:18pt Arial, sans-serif; letter-spacing:-1px; font-weight: bold;  }
+
+.boxgrid,.boxgrid2, .boxgrid3 { 
+	margin:0px; 
+	float:left;
+	
+	/*border: solid 2px #8399AF; */
+	overflow: hidden; 
+	position: relative;
+
+  
+}
+.boxgrid img{ 
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgrid p{ 
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+.boxgrid2 img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgrid2 p{
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+.boxgrid3 img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+}
+.boxgrid3 p{
+        padding: 0 10px;
+        color:#afafaf;
+        font-weight:bold;
+        font:10pt "Lucida Grande", Arial, sans-serif;
+}
+
+.boxgrid{
+width: 180px;
+height: 390px;
+}
+
+.boxgrid2{
+width: 180px;
+height: 390px; }
+
+.boxgrid3{
+width: 180px;
+height: 390px; }
+
+.boxcaption{
+    
+    float: left;
+    position: absolute;
+   
+    height: 340px;
+    width: 100%;
+  
+    /* For IE 5-7 
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);*/
+    /* For IE 8 */
+   
+}
+.captionfull .boxcaption {
+    top: 389px;
+    left: 0;
+}
+.captionfull2 .boxcaption {
+    top: 389px;
+    left: 0;
+}
+.captionfull3 .boxcaption {
+    top: 389px;
+    left: 0;
+}
+.caption .boxcaption {
+    top: 0px;
+    left: 0;
+}
+
+#posicion1
+{
+margin-top:30px;
+}
+
+#posicion2
+{
+margin-left: 0px;
+margin-top:  0px;
+}
+#posicion3
+{
+margin-left: 0px;
+margin-top: -30px;
+}
+#posicion
+{
+margin-left:  0px;
+margin-top:  30px;
+}

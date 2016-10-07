@@ -1,0 +1,157 @@
+/* top */
+ul#navigation
+{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top:50px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+
+ul#navigation li
+{
+    width: 100px;
+}
+
+ul#navigation li a
+{
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;
+    background-color:#CFCFCF;
+     border:1px solid #AFAFAF;
+    /* background-color:#a1aedc;
+     border:1px solid #525f8d;*/
+    background-repeat:no-repeat;
+    background-position:center center;
+
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    -moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    opacity: 0.6;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+ul#navigation .home a
+{
+background-image: url(../images/iconos/01.png);
+}
+ul#navigation .about a
+{
+background-image: url(../images/iconos/02.png);
+}
+ul#navigation .search a
+{
+ background-image: url(../images/iconos/03.png);
+}
+
+ul#navigation .podcasts a
+{
+    background-image: url(../images/iconos/04.png);
+}
+
+ul#navigation .rssfeed a
+{
+    background-image: url(../images/iconos/05.png);
+}
+
+ul#navigation .photos a
+{
+    background-image: url(../images/iconos/06.png);
+}
+
+#franjaTop {background: #fff url(../images/franja2.png) repeat-x ; height: 250px;}
+/*fin top */
+
+/* contenido */
+#content
+{
+padding-bottom: 9em;
+}
+ .flash_error
+{
+  margin: 3px 0;
+  text-indent:2%;
+  padding: 7px;
+  background: #f18e8e url(../images/icons/exclamation.png) center left no-repeat;
+  color: #fff;
+}
+.flash_notice
+{
+  margin: 3px 0;
+  text-indent:2%;
+  padding: 7px;
+  color: #fff;
+  background: #939dc6 url(../images/icons/accept.png) center left no-repeat;
+}
+.panel {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: none;
+    /*background: #939dc6;*/
+    /*border:1px solid #111111;*/
+    background: #CFCFCF;
+    border:1px solid #AFAFAF;
+
+  /*  border:0px;*/
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    -moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+
+    width:200px;
+    height: auto;
+    padding: 0px 0px 0px 42px;
+    filter: alpha(opacity=85);
+    opacity: .85;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=85);
+    z-index: 998;
+}
+
+/*fin contenido */
+
+/* footer */
+#footer
+{
+position: relative;
+margin-top: -7.5em;
+}
+#franjaDown {background:  url(../images/franja1.png) repeat-x ; height:120px;}
+#altoFranjaDown {/*height:72px;*/}
+/*fin footer */
+
+
+/* Generales */
+#nonFooter
+{
+position: relative;
+min-height: 100%;
+}
+html, body
+{
+height: 100%;
+margin: 0; padding: 0;
+}
+* html #nonFooter
+{
+height: 100%;
+}
+.contenedor1
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width:  750px;
+}
+/*fin Generales */
