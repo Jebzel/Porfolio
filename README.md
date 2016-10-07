@@ -6,8 +6,6 @@ These are some of the codes I've  been doing during my career at software develo
 
 * __cms:__ A small content manager system using bootstrap and jquery. You can see a example page <a href="http://goo.gl/ecpUXo" target="_blank">here</a>. 
 
-* __drugstoreApp:__ Made with Symfony 1.4, an app for keeping track the user's weight. When the user registers he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
-
 * __drugstoreGame:__ A game for a drugstore laboratory, on which the user must match the illness to the drug/product designed to heal it. Made on flash cs6 and Actionscript. You can watch the video of the app  <a href="http://goo.gl/p2j8DJ" target="_blank">here</a> (the video has no sound because I captured it from quicktime).
  
 * __drugstoreVisualAid:__ Visual aid made for Ipad in objective C. You can watch the video of the app <a href="http://goo.gl/QJHRON" target="_blank">here</a>.
@@ -18,6 +16,6 @@ These are some of the codes I've  been doing during my career at software develo
 
 * __transferBank:__ An app made in Java with websphere using beans (mandatory uses) in order to make bank account transfers in the same bank.
 
-* __WeightWatcher:__ An app made in Symfony app for watching the user's weight. When the user sign in he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
+* __WeightWatcher:__ Made with Symfony 1.4, an app for watching the user's weight. When the user sign in he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
 
 * __App mockup design:__ Some mockups for mobile apps <a href="http://goo.gl/JBfulR" target="_blank">here</a>. 
