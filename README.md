@@ -18,4 +18,6 @@ These are some of the codes I've  been doing during my career at software develo
 
 * __transferBank:__ An app made in Java with websphere using beans (mandatory uses) in order to make bank account transfers in the same bank.
 
+* __WeightWatcher:__ An app made in Symfony app for watching the user's weight. When the user sign in he types his current condition and his goal, the system follows his weight and activities throughout a period of time until the user reaches his goal.
+
 * __App mockup design:__ Some mockups for mobile apps <a href="http://goo.gl/JBfulR" target="_blank">here</a>. 
