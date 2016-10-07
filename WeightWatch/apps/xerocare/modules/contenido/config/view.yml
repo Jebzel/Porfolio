@@ -1,0 +1,11 @@
+indexSuccess:
+   stylesheets: [home.css,main_old.css]
+
+#consejoSuccess:
+ #  stylesheets: [consejo.css,main.css]
+
+#correctoSuccess:
+#   stylesheets: [correcto.css,main.css]
+
+#ejercicioSuccess:
+#   stylesheets: [ejercicio.css,main.css]

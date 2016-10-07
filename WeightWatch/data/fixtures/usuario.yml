@@ -1,0 +1,49 @@
+usuario:
+  Usuario1:
+     id:           1
+     cedula:       14917807
+     usuario:      jebzel
+     nombre:       jebzel
+     apellido:     castillo
+     clave:        jebzel
+     mail:         jebzel@xerocare.com
+     tipo_id:      2
+     status:       true
+     ubicacion:    Los Teques, Miranda, Venezuela
+     notificacion: true
+  Admin:
+     id:           2
+     usuario:      admin
+     nombre:       admin
+     apellido:     castillo
+     clave:        admin
+     mail:         admin@xerocare.com
+     tipo_id:      1
+     status:       true
+     ubicacion:    Caracas, Distrito Capital, Venezuela
+     notificacion: true
+     status:       true
+  Carolina:
+     id:           3
+     cedula:       15098675
+     usuario:      carolinaazuaje
+     nombre:       Carolina
+     apellido:     Azuaje
+     clave:        yaca300979
+     mail:         carolinaazuaje@gmail.com
+     tipo_id:      1
+     status:       true
+     ubicacion:    Caracas, Distrito Capital, Venezuela
+     notificacion: true
+  Jesus:
+     id:           4
+     usuario:      jesus
+     nombre:       jesus
+     apellido:     uzcategui
+     clave:        1234
+     mail:         juzcategui08@hotmail.com
+     tipo_id:      1
+     status:       true
+     ubicacion:    Caracas, Distrito Capital, Venezuela
+     notificacion: true
+     status:       true

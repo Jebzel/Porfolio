@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/07-Databases
+
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+     #host
+     #dsn:      mysql:host=82.98.131.33;dbname=xerocare#
+     # username: root#
+     # password: root#
+     #local
+      dsn:      mysql:host=localhost;dbname=xerocare
+      username: root
+      password: root

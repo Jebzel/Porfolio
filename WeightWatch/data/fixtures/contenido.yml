@@ -1,0 +1,43 @@
+## YAML Template.
+contenido:
+   consejo:
+     id:          1
+     titulo:      CONSEJOS DE UNA NUTRICIONISTA
+     descripcion: |
+                  Consumir tres o cuatro raciones de frutas al día es muy aconsejable para obtener las vitaminas y minerales necesarias que ellas aportan al organismo, pero lo ideal es siempre consumirlas enteras y no en jugo, pues la fruta triturada pierde mucha de su fibra y no sacia el apetito.
+                  • Otra razón por la cual los jugos de frutas no son recomendables es porque, aún sin agregarle azúcar, suelen ser sumamente calóricos. Por ejemplo, una naranja masticada aporta 60 kcal, pero un jugo de naranja tiene al menos 4 naranjas, lo cual suma hasta 240 kcal.
+                  • Los jugos y otras bebidas que vienen azucaradas como refrescos, té helado, malta, etc, deben ser evitados pues en promedio un vaso de estos líquidos puede tener el equivalente de 9 bolsitas de azúcar.
+                  • Aprender acerca de la manera saludable de cocinar los alimentos es muy importante para poder bajar de peso. Las frituras deben ser evitadas ya que aportan una gran cantidad de calorías y aumentan los triglicéridos. Es preferible hornear la comida, hacerla a la plancha, a la parrilla o guisarla.
+                  • Los frutos secos son muy buenos para el organismo pero en pocas cantidades. Los mismos aportan una cantidad de grasa saludable, pero si nos excedemos pueden contribuir a que aumentemos de peso. Diez unidades de maní equivalen a una cucharadita de aceite de oliva, y por eso se pueden consumir un poco diariamente. Lo importante es que sea de manera controlada.
+     direccion:   /contenido/consejo
+     status:      1
+   correcta:
+     id:          2
+     titulo:      LA CORRECTA NUTRICIÓN DEL PACIENTE OBESO
+     descripcion: |
+                  ¿Cómo debo distribuir mi alimentación?
+                  Aprender a contar calorías puede tomarse como una práctica complicada. Sin embargo este método ayuda mucho a orientarse con respecto a qué debemos comer durante el día y cómo distribuirlo.
+                  Idealmente una mujer que desee adelgazar deberá consumir 1.200 calorías diarias, y un hombre en la misma condición podrá consumir hasta 1.800 calorías al día. La proporción ideal sobre estas calorías es que aporten un 20% de proteínas, 35% de grasas y un 45% de carbohidratos. Estos datos los podemos conseguir en la tabla nutricional de los paquetes de comida que vemos en el supermercado, los cuales nos pueden mostrar la importancia de lograr un equilibrio entre todos los nutrientes.
+                  Lo más importante a nivel de distribución de la alimentación durante el día es jamás omitir alguna de las comidas. Una persona en miras a bajar de peso, o mantenerlo, debe comer hasta 5 veces al día: desayunar, merendar a media mañana, almorzar, merendar a media tarde y cenar.
+                  Estas meriendas son sumamente importantes para no llegar a la próxima comida con demasiada hambre. Al comer poco pero frecuente mantenemos el apetito bajo control y de esa forma llegamos a la próxima comida con más capacidad para controlar las cantidades. Sin embargo estas meriendas no deben ser “otro almuerzo”. Las mismas pueden consistir en un yogurt desgrasado, una galleta integral o una fruta.
+     direccion:   /contenido/correcto
+     status:      1
+   ejercicio:
+     id:          3
+     titulo:      EL EJERCICIO COMO TRATAMIENTO PARA LA OBESIDAD
+     descripcion: |
+                  ¿Cuál es la mejor manera de ejercitarme si soy obeso?
+                  Los expertos sugieren que lo primero que hay que entender es que incrementar la masa muscular permite aumentar la energía que gastamos mientras estamos en reposo, por lo tanto, mejora la eciencia de nuestro cuerpo para usar grasas como suministro de energía, lo cual en primera instancia es lo que se desea en pacientes obesos.
+                  Para esto lo óptimo es hacer ejercicios de Fuerza Muscular, como ligas o pesas pues son la herramienta fundamental para lograr el incremento de la masa muscular. Las recomendaciones básicas para una rutina de ejercicios son las siguientes:
+                  1.- Realizar un circuito de 8 a 10 ejercicios multiarticulares, como las sentadillas por ejemplo. Hacerlos entre 2 y 3 veces por semana en repeticiones de entre 10 y 15.
+                  2.- Alternar los grupos musculares que se ejercitan en un circuito, por ejemplo hacer primero pectorales y después ejercitar la espalda.
+                  3.- Disminuir progresivamente el tiempo de descanso entre las series y ejercicios.
+     direccion:   /contenido/ejercicio
+     status:      3
+   imc:
+     id:          4
+     titulo:      CALCULO DE IMC
+     descripcion: |
+                  El Índice de Masa Corporal es un índice del peso de una persona en relación con su altura. A pesar de que no hace distinción entre los componentes grasos y no grasos de la masa corporal total, éste es el método más práctico para evaluar el grado de riesgo asociado con la obesidad.
+     direccion:   /imc
+     status:      3

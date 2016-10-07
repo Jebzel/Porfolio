@@ -1,0 +1,403 @@
+Usuario:
+  columns:
+    id:
+      type: integer(6)
+      primary: true
+      autoincrement: true
+    cedula:
+      type: string(9)
+      primary: false
+      notnull: false
+      autoincrement: false
+    usuario:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nombre:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellido:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    clave:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    mail:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo_id:
+      type: integer(6)
+      notnull: false
+    status:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+      default: true
+    ubicacion:
+      type: string(120)
+      fixed: false
+      unsigned: false
+      primary: false
+     # default: 'Caracas, Venezuela'
+      notnull: false
+      autoincrement: false
+    notificacion:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    especialidad:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    consultorio:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    last_login:
+      type: timestamp
+    created_at:
+       type: timestamp
+    updated_at:
+       type: timestamp
+
+User:
+  columns:
+    id:
+      type: integer(6)
+      primary: true
+      autoincrement: true
+    cedula:
+      type: string(9)
+      primary: false
+      notnull: false
+      autoincrement: false
+    usuario:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nombre:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellido:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    clave:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    mail:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo_id:
+      type: integer(6)
+      notnull: true
+    status:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+      default: true
+    last_login:
+      type: timestamp
+    created_at:
+      type: timestamp
+  relations:
+    Tipo:
+      foreignType: one
+
+
+Tipo:
+  tableName: tipo
+  columns:
+    id:
+      type: integer(6)
+      autoincrement: true
+      primary: true
+    nombre:
+      type: string(255)
+
+Medico:
+  connection: doctrine
+  tableName: medico
+  columns:
+    id:
+       type: integer(6)
+       fixed: false
+       unsigned: false
+       primary: true
+       autoincrement: false
+       notnull: true
+    usuario_id:
+       type: integer(6)
+       fixed: false
+       unsigned: false
+       primary: false
+       notnull: true
+    ubicacion:
+      type: string(120)
+      fixed: false
+      unsigned: false
+      primary: false
+     # default: 'Caracas, Venezuela'
+      notnull: false
+      autoincrement: false
+    notificacion:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    especialidad:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    consultorio:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Usuario:
+      foreignType: one
+      
+Regular:
+  connection: doctrine
+  tableName: regular
+  columns:
+    id:
+       type: integer(6)
+       fixed: false
+       unsigned: false
+       primary: true
+       autoincrement: false
+       notnull: true
+    usuario_id:
+       type: integer(6)
+       fixed: false
+       unsigned: false
+       primary: false
+       notnull: true
+    ubicacion:
+      type: string(120)
+      fixed: false
+      unsigned: false
+      primary: false
+     # default: 'Caracas, Venezuela'
+      notnull: false
+      autoincrement: false
+    notificacion:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false 
+  relations:
+    Usuario:
+      foreignType: one
+      foreignAlias: regulares
+
+Imc:
+  connection: doctrine
+  tableName: imc
+  columns:
+    id:
+      type: integer(6)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    usuario_id:
+       type: integer(6)
+       fixed: false
+       unsigned: false
+       primary: false
+       notnull: true
+    imc:
+      type: float(18)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_reg:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Usuario:
+      foreignType: one
+      
+Noticia:
+  connection: doctrine
+  tableName: noticia
+  columns:
+    id:
+      type: integer(6)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    titulo:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    descripcion:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ubicacion:
+      type: string(120)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_reg:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_fin:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    img1:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    img2:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    img3:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+
+Contenido:
+  connection: doctrine
+  tableName: contenido
+  columns:
+    id:
+      type: integer(6)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    titulo:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    descripcion:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    direccion:
+      type: string(60)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    status:
+      type: boolean
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+      default: true

@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+     title:        Programa Xerocare
+     description:  Programa Xerocare en Venezuela
+     keywords:     Xerocare, Galeno, Venezuela, nutricion, imc, calculo imc, xerograx, xerogras, obesidad, obeso, dieta, ejercicio, orlistat, reduccion, absorcion, grasa, rebajar, kilo, gramo, indice de masa corporal
+     language:     es
+     robots:       index, follow
+
+  stylesheets:    [style.css, menu_top.css]
+
+  javascripts:    [jquery.js]
+
+  has_layout:     true
+  layout:         layout2
